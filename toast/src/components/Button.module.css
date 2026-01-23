@@ -1,0 +1,53 @@
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 120px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .btn {
+        min-width: 100px;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+.loadingBtn {
+    background: linear-gradient(45deg, #6c757d, #495057);
+    color: white;
+}
+
+.successBtn {
+    background: linear-gradient(45deg, #28a745, #218838);
+    color: white;
+}
+
+.infoBtn {
+    background: linear-gradient(45deg, #17a2b8, #138496);
+    color: white;
+}
+
+.warningBtn {
+    background: linear-gradient(45deg, #ffc107, #e0a800);
+    color: #212529;
+}
+
+.errorBtn {
+    background: linear-gradient(45deg, #dc3545, #c82333);
+    color: white;
+}

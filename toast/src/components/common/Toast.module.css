@@ -1,0 +1,98 @@
+.toastItem {
+    margin-bottom: 16px;
+    padding: 10px 16px;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    background: #fff;
+    pointer-events: all;
+}
+
+.loadingMessage {
+    border: 1px solid #91d5ff;
+    background-color: #e6f7ff;
+}
+
+.loadingMessage .messageIcon {
+    color: #1890ff;
+}
+
+.successMessage {
+    border: 1px solid #b7eb8f;
+    background-color: #f6ffed;
+}
+
+.successMessage .messageIcon {
+    color: #52c41a;
+}
+
+.infoMessage {
+    border: 1px solid #91d5ff;
+    background-color: #e6f7ff;
+}
+
+.infoMessage .messageIcon {
+    color: #1890ff;
+}
+
+.warningMessage {
+    border: 1px solid #ffe58f;
+    background-color: #fffbe6;
+}
+
+.warningMessage .messageIcon {
+    color: #faad14;
+}
+
+.errorMessage {
+    border: 1px solid #ffccc7;
+    background-color: #fff2f0;
+}
+
+.errorMessage .messageIcon {
+    color: #ff4d4f;
+}
+
+@keyframes messageFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.toastEnter {
+    animation: messageFadeIn 0.2s ease-out forwards;
+}
+
+@keyframes messageFadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+.toastExit {
+    animation: messageFadeOut 0.2s ease-out forwards;
+}
+
+.messageIcon {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.messageContent {
+    flex: 1;
+    font-size: 14px;
+    line-height: 1.5;
+}

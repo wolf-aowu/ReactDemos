@@ -1,0 +1,9 @@
+.toastContainer {
+    position: fixed;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1010;
+    width: fit-content;
+    max-width: 400px;
+}
