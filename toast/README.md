@@ -89,6 +89,8 @@ library.add(fas);
 
 不管 eslint 的提示程序也可以跑（试过了）。
 
+我看到还有一种导出方法，不要把 `export` 卸载前面，而是在文件最后 `export { useMessageContext, ToastProvider }`，不过这种方法我没有试过，不确定是否会有 eslint 提示。
+
 ##### map 中的箭头函数
 
 map 用了 `{}`（函数体）必须手动 `return`。没用 `{}`（表达式体）自动 `return`。
